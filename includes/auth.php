@@ -17,6 +17,11 @@ function login($username, $password) {
     return false;
 }
 
+// Check if user is login
+function isLogin() {
+  return isset($_SESSION['role']);
+}
+
 // Check if user is admin
 function isAdmin() {
     return isset($_SESSION['role']) && $_SESSION['role'] === 'admin';
