@@ -51,3 +51,5 @@ INSERT INTO users (username, password, role)
 VALUES ('admin', 'p455w0rd', 'admin');
 
 SELECT * FROM books;
+
+DELETE FROM books WHERE id = 4;
