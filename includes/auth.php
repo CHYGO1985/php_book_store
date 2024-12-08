@@ -61,6 +61,7 @@ function isAdminBySessionId() {
   }
 }
 
+
 // Logout
 function logout() {
     session_destroy();
