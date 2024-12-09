@@ -52,4 +52,10 @@ VALUES ('admin', 'p455w0rd', 'admin');
 
 SELECT * FROM books;
 
+-- delete all records in books, disbale foreign key for deletion
+SET FOREIGN_KEY_CHECKS = 0;
+TRUNCATE TABLE books;
+SET FOREIGN_KEY_CHECKS = 1;
+
+
 DELETE FROM books WHERE id = 4;
