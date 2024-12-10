@@ -59,3 +59,5 @@ SET FOREIGN_KEY_CHECKS = 1;
 
 
 DELETE FROM books WHERE id = 4;
+
+UPDATE books SET stock_quantity = 20 WHERE id = 10;
